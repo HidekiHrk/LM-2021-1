@@ -4,6 +4,9 @@
 /* Material Icons */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+/* FontAwesome Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
 body {
   color: darkslategray;
   font-family: arial, sans-serif;
