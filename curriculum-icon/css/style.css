@@ -1,3 +1,9 @@
+/* Audiowide font */
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+/* Material Icons */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 body {
   color: darkslategray;
   font-family: arial, sans-serif;
@@ -10,6 +16,7 @@ body {
 
 h1 {
   font-size: 30px;
+  font-family: "Audiowide", cursive;
 }
 
 h1 a,
@@ -30,6 +37,7 @@ h2:hover a {
 h2 {
   font-size: 24px;
   background-color: lightskyblue;
+  border-radius: 5px;
 }
 
 h1,
@@ -47,7 +55,77 @@ a:hover {
   text-decoration: underline;
 }
 
+span.material-icons {
+  font-size: 1rem;
+}
+
+p,
+span.material-icons {
+  line-height: 1.5rem;
+}
+
+a.btn {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+a.btn:hover {
+  color: white;
+  background-color: darkblue;
+}
+
 div#footer p#copyright {
   font-weight: bold;
   font-style: italic;
 }
+
+div#social {
+  text-align: center;
+}
+
+div#social a {
+  color: white;
+  font-size: 2rem;
+}
+
+div#social a.color-navy {
+  color: navy;
+}
+
+div#social a.color-dodgerblue {
+  color: dodgerblue;
+}
+
+@media print {
+  body,
+  h1 {
+    color: black;
+    font-family: Times, serif;
+  }
+
+  h1#elon {
+    text-align: left;
+  }
+
+  h2 {
+    background-color: unset;
+  }
+
+  h2 a,
+  a.topo {
+    color: white;
+  }
+}
+
+/* Observações:
+      Os estilos de ambas as páginas: index.html e resumo.html
+      assim como os estilos de visualização de impressão
+      estão compilados neste único arquivo css por motivos de
+      performance.
+      É óbvio que à medida que o projeto for crescendo é altamente recomendado
+      organizar em vários arquivos, mas recorrer a isso é mais custoso da parte do usuário,
+      por isso utilizamos ferramentas de automação de tarefas como o grunt ou gulp para
+      compilar arquivos css, js e etc em um só arquivo para evitar um grande número de
+      arquivos sendo transferidos resultando em várias requests. Outra alternativa
+      seria utilizar o webpack.
+*/
